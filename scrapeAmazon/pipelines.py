@@ -14,7 +14,7 @@ class ScrapeamazonPipeline(object):
             item["title"] = ''.join(item["title"])
 
         if item.get("price"):
-            item["price"] = float((''.join(item["price"])).strip("$")) * 100
+            item["price"] = float((''.join(item["price"]).split("$")[-1])) * 100
         if item.get("rating"):
             item["rating"] = float(((''.join(item["rating"][0])).split(" ", 1))[0])
         if item.get("description"):
@@ -64,9 +64,12 @@ class ScrapeamazonPipeline(object):
         item["categories"] = []
         item["categories"].append(categories)
 
-        del (item["url"])
-        del (item["categories_nodes"])
-        del (item["categories_titles"])
+        if item.get("url"):
+            del(item["url"])
+        if item.get("categories_nodes"):
+            del(item["categories_nodes"])
+        if item.get("categories_titles"):
+            del(item["categories_titles"])
 
         return item
 

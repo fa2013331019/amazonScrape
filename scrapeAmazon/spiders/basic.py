@@ -28,18 +28,18 @@ class BasicSpider(scrapy.Spider):
 
             l.default_output_processor = MapCompose(lambda v: v.strip(), replace_escape_chars)
 
-            l.add_xpath('title', 'normalize-space(//span[@id="productTitle"]/text())', TakeFirst())
-            l.add_xpath('brand', '//a[@id="bylineInfo"]/text()', TakeFirst())
-            l.add_xpath('description', 'normalize-space(//div[@id="productDescription"]/p/text())', TakeFirst())
-            l.add_xpath('price', '//span[@id="priceblock_ourprice"]/text()', TakeFirst())
+            l.add_xpath('title', 'normalize-space(//span[@id="productTitle"]/text())')
+            l.add_xpath('brand', '//a[@id="bylineInfo"]/text()')
+            l.add_xpath('description', 'normalize-space(//div[@id="productDescription"]/p/text())')
+            l.add_xpath('price', '//*[@id="olp-upd-new"]/span[1]/a/text()')
             # l.add_xpath('dimensions', '//td[@class="a-size-base"][0]/text()')
-            l.add_xpath('dimensions', '//td[@class="a-size-base"]/text()', TakeFirst())
-            l.add_xpath('images', '//span[@class="a-button-inner"]/span[@class="a-button-text"]/img/@src', TakeFirst())
+            l.add_xpath('dimensions', '//td[@class="a-size-base"]/text()')
+            l.add_xpath('images', '//span[@class="a-button-inner"]/span[@class="a-button-text"]/img/@src')
             l.add_xpath('categories_titles',
-                        '//li/span[@class="a-list-item"]/a[contains(@class,"a-color-tertiary")]/text()', TakeFirst())
-            l.add_xpath('categories_nodes', '//li/span[@class="a-list-item"]/a[contains(@class,"a-color-tertiary")]/@href', TakeFirst())
-            l.add_xpath('similarProducts', '//th/@data-asin', TakeFirst())
-            l.add_xpath('rating', '//span[@id="acrPopover"][1]/@title', TakeFirst())
+                        '//li/span[@class="a-list-item"]/a[contains(@class,"a-color-tertiary")]/text()')
+            l.add_xpath('categories_nodes', '//li/span[@class="a-list-item"]/a[contains(@class,"a-color-tertiary")]/@href')
+            l.add_xpath('similarProducts', '//th/@data-asin')
+            l.add_xpath('rating', '//span[@id="acrPopover"][1]/@title')
 
             # Housekeeping fields
             l.add_value('url', response.url, TakeFirst())
