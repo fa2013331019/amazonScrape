@@ -9,18 +9,26 @@ import json
 
 
 class ScrapeamazonPipeline(object):
+
     def process_item(self, item, spider):
         if item.get("title"):
             item["title"] = ''.join(item["title"])
+        else:
+            raise DropItem()
 
         if item.get("price"):
             item["price"] = float((''.join(item["price"]).split("$")[-1])) * 100
+
         if item.get("rating"):
             item["rating"] = float(((''.join(item["rating"][0])).split(" ", 1))[0])
+
         if item.get("description"):
             item["description"] = ''.join(item["description"])
+        else:
+            raise DropItem()
         if item.get("brand"):
             item["brand"] = ''.join(item["brand"])
+
         if item.get("asin"):
             item["asin"] = ''.join(item["url"]).split("/")[-1]
 
@@ -70,6 +78,8 @@ class ScrapeamazonPipeline(object):
             del(item["categories_nodes"])
         if item.get("categories_titles"):
             del(item["categories_titles"])
+        if item.get("categories"):
+            del(item["categories"])
 
         return item
 
