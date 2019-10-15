@@ -15,7 +15,7 @@ import urllib
 class BasicSpider(scrapy.Spider):
     name = 'basic'
     allowed_domains = ['amazon']
-    start_urls = []
+    start_urls = ["https://www.amazon.com/dp/B004CNH98C"]
 
     filePath = '/home/mountain19/Documents/scrapeAmazon/asins.txt'
     with open(filePath) as fp:
@@ -28,9 +28,9 @@ class BasicSpider(scrapy.Spider):
 
             l.default_output_processor = MapCompose(lambda v: v.strip(), replace_escape_chars)
 
-            l.add_xpath('title', 'normalize-space(//span[@id="productTitle"]/text())')
+            l.add_xpath('title', '//span[@id="productTitle"]/text()')
             l.add_xpath('brand', '//a[@id="bylineInfo"]/text()')
-            l.add_xpath('description', 'normalize-space(//div[@id="productDescription"]/p/text())')
+            l.add_xpath('description', '//div[@id="productDescription"]/p/text()')
             l.add_xpath('price', '//*[@id="olp-upd-new"]/span[1]/a/text()')
             # l.add_xpath('dimensions', '//td[@class="a-size-base"][0]/text()')
             l.add_xpath('dimensions', '//td[@class="a-size-base"]/text()')

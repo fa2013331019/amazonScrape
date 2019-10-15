@@ -7,7 +7,7 @@
 
 import scrapy
 from scrapy.item import Item, Field
-from scrapy.loader.processors import TakeFirst
+
 
 
 class ScrapeamazonItem(scrapy.Item):
