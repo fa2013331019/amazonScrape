@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52611ce-ad4c-47e8-8e15-67518208db4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scrapeAmazon/pipelines/brandPipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapeAmazon/pipelines/categories.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapeAmazon/pipelines/descriptionPipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapeAmazon/pipelines/dimensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapeAmazon/pipelines/pricePipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapeAmazon/pipelines/rating.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapeAmazon/pipelines/titlePipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/products.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapeAmazon/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapeAmazon/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapeAmazon/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapeAmazon/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapeAmazon/pipelines.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapeAmazon/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapeAmazon/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapeAmazon/spiders/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapeAmazon/spiders/basic.py" afterDir="false" />
     </list>
@@ -18,36 +24,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapeAmazon/items.py">
+        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/pricePipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="357">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#154#167#0" expanded="true" />
+                <element signature="e#194#232#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapeAmazon/middlewares.py">
+        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/dimensions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1505">
-              <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+            <state relative-caret-position="619">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <folding>
+                <element signature="e#194#232#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapy.cfg">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapeAmazon/spiders/basic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="44" column="56" lean-forward="true" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+            <state relative-caret-position="-529">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -56,26 +60,87 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines.py">
+        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/categories.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="661">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="e#194#232#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/titlePipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#194#232#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapeAmazon/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="56" column="69" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
+            <state relative-caret-position="357">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+              <folding>
+                <element signature="e#426#473#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapeAmazon/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/rating.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="e#194#232#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/brandPipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#194#232#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/asinPipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="e#194#232#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/descriptionPipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#194#232#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -94,9 +159,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines.py" />
         <option value="$PROJECT_DIR$/scrapeAmazon/middlewares.py" />
         <option value="$PROJECT_DIR$/scrapeAmazon/items.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/images.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/similarProducts.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/asinPipeline.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/brandPipeline.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/categories.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/descriptionPipeline" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/dimensions.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/pricePipeline.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/rating.py" />
+        <option value="$PROJECT_DIR$/scrapeAmazon/pipelines/titlePipeline.py" />
         <option value="$PROJECT_DIR$/scrapeAmazon/spiders/basic.py" />
         <option value="$PROJECT_DIR$/scrapeAmazon/settings.py" />
       </list>
@@ -141,6 +216,12 @@
               <item name="scrapeAmazon" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrapeAmazon" type="462c0819:PsiDirectoryNode" />
               <item name="scrapeAmazon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapeAmazon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapeAmazon" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapeAmazon" type="462c0819:PsiDirectoryNode" />
+              <item name="pipelines" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scrapeAmazon" type="b2602c69:ProjectViewProjectNode" />
@@ -195,18 +276,18 @@
   <component name="ToolWindowManager">
     <frame x="60" y="-4" width="1621" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.11967418" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16165413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.70347005" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.56256574" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32948583" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -214,7 +295,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.11967418" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11967418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,7 +306,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25341746" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.16193481" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32948583" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -262,7 +343,7 @@
     <entry file="file://$PROJECT_DIR$/scrapeAmazon/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
           <folding>
             <element signature="e#154#167#0" expanded="true" />
           </folding>
@@ -271,34 +352,137 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapeAmazon/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1505">
-          <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        <state relative-caret-position="1869">
+          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapeAmazon/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapeAmazon/settings.py">
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="56" column="69" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
+        <state relative-caret-position="1587">
+          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/images.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/similarProducts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/rating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/pricePipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/dimensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/categories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/brandPipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/asinPipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapeAmazon/spiders/basic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="44" column="56" lean-forward="true" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+        <state relative-caret-position="-529">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/titlePipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/pipelines/descriptionPipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#194#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapeAmazon/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="e#426#473#0" expanded="true" />
           </folding>
         </state>
       </provider>
